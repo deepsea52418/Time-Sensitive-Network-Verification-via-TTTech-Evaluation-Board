@@ -1,0 +1,55 @@
+<mxfile host="65bd71144e">
+    <diagram id="d85fhLOd2gPWHodAwBuT" name="Page-1">
+        <mxGraphModel dx="2326" dy="1210" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" style="edgeStyle=none;html=1;rounded=0;" edge="1" parent="1" source="V5ZEcJ-CgwX_Xdz-ilFN-2" target="V5ZEcJ-CgwX_Xdz-ilFN-4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="V5ZEcJ-CgwX_Xdz-ilFN-2" value="" style="shape=mxgraph.cisco.computers_and_peripherals.terminal;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;direction=east;" parent="1" vertex="1">
+                    <mxGeometry x="-185" y="250" width="61" height="54" as="geometry"/>
+                </mxCell>
+                <mxCell id="V5ZEcJ-CgwX_Xdz-ilFN-3" value="" style="shape=mxgraph.cisco.computers_and_peripherals.terminal;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;direction=east;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="352" width="61" height="54" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;html=1;" edge="1" parent="1" source="V5ZEcJ-CgwX_Xdz-ilFN-4" target="V5ZEcJ-CgwX_Xdz-ilFN-6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="V5ZEcJ-CgwX_Xdz-ilFN-4" value="" style="shape=mxgraph.cisco.switches.workgroup_switch;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;direction=east;" parent="1" vertex="1">
+                    <mxGeometry x="19" y="352" width="101" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;" edge="1" parent="1" source="V5ZEcJ-CgwX_Xdz-ilFN-6" target="V5ZEcJ-CgwX_Xdz-ilFN-3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="V5ZEcJ-CgwX_Xdz-ilFN-6" value="" style="shape=mxgraph.cisco.switches.workgroup_switch;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;direction=east;" parent="1" vertex="1">
+                    <mxGeometry x="316.5" y="352" width="105" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="V5ZEcJ-CgwX_Xdz-ilFN-17" value="&lt;font style=&quot;font-size: 23px&quot;&gt;Bridge 04&lt;br&gt;&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-5" y="420" width="110" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="V5ZEcJ-CgwX_Xdz-ilFN-19" value="&lt;font style=&quot;font-size: 23px&quot;&gt;Bridge 03&lt;br&gt;&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="420" width="110" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="V5ZEcJ-CgwX_Xdz-ilFN-21" value="&lt;font style=&quot;font-size: 23px&quot;&gt;AV&lt;br&gt;192.168.0.13&lt;br&gt;&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-240" y="310" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="V5ZEcJ-CgwX_Xdz-ilFN-22" value="&lt;font style=&quot;font-size: 23px&quot;&gt;Listener&lt;br&gt;192.168.0.10&lt;br&gt;&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="412" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" style="edgeStyle=none;html=1;" edge="1" parent="1" source="2" target="V5ZEcJ-CgwX_Xdz-ilFN-4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="shape=mxgraph.cisco.computers_and_peripherals.terminal;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;direction=east;" vertex="1" parent="1">
+                    <mxGeometry x="-185" y="452" width="61" height="54" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;font style=&quot;font-size: 23px&quot;&gt;BE&lt;br&gt;192.168.0.12&lt;br&gt;&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="-240" y="512" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;font style=&quot;font-size: 23px&quot;&gt;AV: Audio-Video Traffic (Non-preemptive)&amp;nbsp; (Priority - 5)&lt;br&gt;BE: Best-Effort Traffic (Preemptive)&amp;nbsp; (Priority - 1)&amp;nbsp;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="250" width="990" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
