@@ -1,4 +1,4 @@
-# Time-Sensitive Network Set up and Verification \\ via TTTech Evaluation Board
+# Time-Sensitive Network Set up and Verification via TTTech Evaluation Board
 
 
 Real-time systems are systems require speciﬁed timing constraints and react upon environment within precise time, which play a crucial role in wide  Internet of Things (IoT) applications, e.g., nuclear power plants, railway switching systems, automotive and avionic systems, air trafﬁc control, telecommunications, robotics, and military systems. The primary concerns of real-time systems are predictability and reliability, hence they are not only needed to promise correctness of computation, but also to guarantee the in time response. 
