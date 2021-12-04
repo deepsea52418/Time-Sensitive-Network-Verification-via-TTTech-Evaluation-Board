@@ -1,7 +1,11 @@
 #! /bin/sh
 
+## remove old vlan
+ip link delete name vlan3
+
 ## Add vlan to eth0 for talker jiachen
-ip link add link sw0ep name vlan3 type vlan id 3
+ip link add link eth0 name vlan3 type vlan id 3
+ip addr add 192.168.0.13/24 dev vlan3
 
 ## Change every priority from Host4 as 
 ip link set vlan3 type vlan egress 0:5
@@ -12,3 +16,5 @@ ip link set vlan3 type vlan egress 4:5
 ip link set vlan3 type vlan egress 5:5
 ip link set vlan3 type vlan egress 6:5
 ip link set vlan3 type vlan egress 7:5
+
+ip link set vlan3 up
