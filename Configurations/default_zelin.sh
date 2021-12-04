@@ -2,10 +2,11 @@
 
 ## remove old vlan
 ip link delete name vlan2
+ip addr del 192.168.0.12/24 dev eth0
 
 ## Add vlan to eth0 for talker zelin
 ip link add link eth0 name vlan2 type vlan id 2
-ip addr add 192.168.0.12/24 dev vlan2
+ip addr add 192.168.10.12/24 dev vlan2
 
 ## Change every priority from Host4 as 
 ip link set vlan2 type vlan egress 0:1

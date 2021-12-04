@@ -1,5 +1,3 @@
-# Scenario1 - Single media application
-
 ## 1. Experiment setting
 
 ### Jiachen & Zelin
@@ -31,7 +29,7 @@ Make sure the name of ethernet port is "eth0", dhcp4 is off:
                         password: "1234567809"
                         hidden: false
 
-Then apply those configurations in each folder
+Then apply those configurations
 
 ## 2. Experiment conduction
 
