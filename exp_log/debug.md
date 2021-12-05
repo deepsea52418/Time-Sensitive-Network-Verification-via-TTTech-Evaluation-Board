@@ -58,6 +58,6 @@ Solution Let's make VLAN into another network segment 192.168.10.XXX
 ---
 
 
-
+Everything works now.
 
 
