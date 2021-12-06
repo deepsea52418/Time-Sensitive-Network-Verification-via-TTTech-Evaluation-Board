@@ -18,12 +18,12 @@ AV is non-preemptive, priority -> 5
 
 ## Boards configuration
 
-For Host02:
+For Host02 and Host03:
 
-tsntool preempt setq 1 preempt sw0p5
+tsntool preempt setq 2 preempt sw0p5
 tsntool preempt enable verify 100 sw0p5
 
-tsntool preempt setq 1 express sw0p5
+tsntool preempt setq 2 express sw0p5
 tsntool preempt enable verify 100 sw0p5
 
 tsntool preempt show sw0p5
