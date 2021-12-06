@@ -1,0 +1,67 @@
+------------------------------------------------------------
+Client connecting to 192.168.10.10, TCP port 5001 with pid 9716
+TCP window size: 64.0 KByte (WARNING: requested 32.0 KByte)
+------------------------------------------------------------
+[  3] local 192.168.10.12 port 34776 connected with 192.168.10.10 port 5001
+[ ID] Interval        Transfer    Bandwidth       Write/Err  Rtry    Cwnd/RTT
+[  3] 0.00-1.00 sec  5.53 MBytes  46.4 Mbits/sec  90568/0          0       55K/6109 us
+[  3] 1.00-2.00 sec  5.53 MBytes  46.4 Mbits/sec  90635/0          0       55K/6805 us
+[  3] 2.00-3.00 sec  5.50 MBytes  46.2 Mbits/sec  90148/0          0       55K/6586 us
+[  3] 3.00-4.00 sec  5.53 MBytes  46.4 Mbits/sec  90535/0          0       55K/6333 us
+[  3] 4.00-5.00 sec  5.53 MBytes  46.4 Mbits/sec  90555/0          0       55K/6093 us
+[  3] 5.00-6.00 sec  5.51 MBytes  46.2 Mbits/sec  90281/0          0       55K/6125 us
+[  3] 6.00-7.00 sec  5.52 MBytes  46.3 Mbits/sec  90376/0          0       55K/6076 us
+[  3] 7.00-8.00 sec  5.53 MBytes  46.4 Mbits/sec  90649/0          0       85K/6515 us
+[  3] 8.00-9.00 sec  5.51 MBytes  46.2 Mbits/sec  90318/0          0       85K/6696 us
+[  3] 9.00-10.00 sec  5.51 MBytes  46.2 Mbits/sec  90306/0          0       85K/6157 us
+[  3] 10.00-11.00 sec  5.50 MBytes  46.2 Mbits/sec  90162/0          0       85K/6229 us
+[  3] 11.00-12.00 sec  5.52 MBytes  46.3 Mbits/sec  90452/0          0       85K/6703 us
+[  3] 12.00-13.00 sec  5.50 MBytes  46.2 Mbits/sec  90188/0          0       85K/6438 us
+[  3] 13.00-14.00 sec  5.54 MBytes  46.5 Mbits/sec  90748/0          0       85K/6706 us
+[  3] 14.00-15.00 sec  5.51 MBytes  46.2 Mbits/sec  90208/0          0       85K/6159 us
+[  3] 15.00-16.00 sec  5.51 MBytes  46.2 Mbits/sec  90241/0          0       85K/6301 us
+[  3] 16.00-17.00 sec  5.53 MBytes  46.4 Mbits/sec  90581/0          0       85K/6391 us
+[  3] 17.00-18.00 sec  5.52 MBytes  46.3 Mbits/sec  90464/0          0       85K/7175 us
+[  3] 18.00-19.00 sec  5.51 MBytes  46.2 Mbits/sec  90210/0          0       85K/6107 us
+[  3] 19.00-20.00 sec  5.51 MBytes  46.3 Mbits/sec  90354/0          0       85K/6512 us
+[  3] 20.00-21.00 sec  5.51 MBytes  46.2 Mbits/sec  90231/0          0       85K/6703 us
+[  3] 21.00-22.00 sec  5.52 MBytes  46.3 Mbits/sec  90366/0          0       85K/6101 us
+[  3] 22.00-23.00 sec  5.51 MBytes  46.2 Mbits/sec  90281/0          0       85K/6996 us
+[  3] 23.00-24.00 sec  5.51 MBytes  46.3 Mbits/sec  90352/0          0       85K/6034 us
+[  3] 24.00-25.00 sec  5.53 MBytes  46.3 Mbits/sec  90526/0          0       85K/6723 us
+[  3] 25.00-26.00 sec  5.53 MBytes  46.4 Mbits/sec  90566/0          0       85K/7162 us
+[  3] 26.00-27.00 sec  5.51 MBytes  46.2 Mbits/sec  90317/0          0       85K/6132 us
+[  3] 27.00-28.00 sec  5.51 MBytes  46.2 Mbits/sec  90291/0          0       85K/6433 us
+[  3] 28.00-29.00 sec  5.50 MBytes  46.1 Mbits/sec  90086/0          0       85K/5937 us
+[  3] 29.00-30.00 sec  5.53 MBytes  46.4 Mbits/sec  90591/0          0       85K/6790 us
+[  3] 30.00-31.00 sec  5.51 MBytes  46.2 Mbits/sec  90211/0          0       85K/6323 us
+[  3] 31.00-32.00 sec  5.51 MBytes  46.2 Mbits/sec  90237/0          0       85K/6711 us
+[  3] 32.00-33.00 sec  5.53 MBytes  46.4 Mbits/sec  90617/0          0       85K/6271 us
+[  3] 33.00-34.00 sec  5.50 MBytes  46.2 Mbits/sec  90146/0          0       85K/6116 us
+[  3] 34.00-35.00 sec  5.52 MBytes  46.3 Mbits/sec  90441/0          0       85K/6235 us
+[  3] 35.00-36.00 sec  5.52 MBytes  46.3 Mbits/sec  90414/0          0       85K/6901 us
+[  3] 36.00-37.00 sec  5.52 MBytes  46.3 Mbits/sec  90406/0          0       85K/6648 us
+[  3] 37.00-38.00 sec  5.52 MBytes  46.3 Mbits/sec  90398/0          0       85K/6423 us
+[  3] 38.00-39.00 sec  5.50 MBytes  46.1 Mbits/sec  90071/0          0       85K/6336 us
+[  3] 39.00-40.00 sec  5.52 MBytes  46.3 Mbits/sec  90449/0          0       85K/6469 us
+[  3] 40.00-41.00 sec  5.51 MBytes  46.2 Mbits/sec  90303/0          0       85K/6210 us
+[  3] 41.00-42.00 sec  5.51 MBytes  46.2 Mbits/sec  90304/0          0       85K/6443 us
+[  3] 42.00-43.00 sec  5.52 MBytes  46.3 Mbits/sec  90465/0          0       85K/6510 us
+[  3] 43.00-44.00 sec  5.50 MBytes  46.2 Mbits/sec  90188/0          0       85K/6300 us
+[  3] 44.00-45.00 sec  5.53 MBytes  46.4 Mbits/sec  90537/0          0       85K/6709 us
+[  3] 45.00-46.00 sec  5.50 MBytes  46.2 Mbits/sec  90172/0          0       85K/6352 us
+[  3] 46.00-47.00 sec  5.53 MBytes  46.4 Mbits/sec  90633/0          0       85K/6853 us
+[  3] 47.00-48.00 sec  5.50 MBytes  46.2 Mbits/sec  90146/0          0       85K/6283 us
+[  3] 48.00-49.00 sec  5.51 MBytes  46.2 Mbits/sec  90259/0          0       85K/6128 us
+[  3] 49.00-50.00 sec  5.52 MBytes  46.3 Mbits/sec  90396/0          0       85K/6352 us
+[  3] 50.00-51.00 sec  5.54 MBytes  46.4 Mbits/sec  90687/0          0       85K/7125 us
+[  3] 51.00-52.00 sec  5.51 MBytes  46.2 Mbits/sec  90197/0          0       85K/6083 us
+[  3] 52.00-53.00 sec  5.52 MBytes  46.3 Mbits/sec  90382/0          0       85K/6777 us
+[  3] 53.00-54.00 sec  5.51 MBytes  46.2 Mbits/sec  90254/0          0       85K/6317 us
+[  3] 54.00-55.00 sec  5.52 MBytes  46.3 Mbits/sec  90424/0          0       85K/6457 us
+[  3] 55.00-56.00 sec  5.52 MBytes  46.3 Mbits/sec  90517/0          0       85K/6043 us
+[  3] 56.00-57.00 sec  5.50 MBytes  46.2 Mbits/sec  90193/0          0       85K/6504 us
+[  3] 57.00-58.00 sec  5.51 MBytes  46.2 Mbits/sec  90219/0          0       85K/6342 us
+[  3] 58.00-59.00 sec  5.49 MBytes  46.1 Mbits/sec  89977/0          0       85K/6391 us
+[  3] 59.00-60.00 sec  5.52 MBytes  46.3 Mbits/sec  90397/0          0       85K/6271 us
+[  3] 0.00-60.00 sec   331 MBytes  46.3 Mbits/sec  5421626/0          0       85K/6271 us
