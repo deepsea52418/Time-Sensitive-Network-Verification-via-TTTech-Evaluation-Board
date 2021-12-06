@@ -25,17 +25,21 @@ tsntool preempt enable verify 100 sw0p5
 
 tsntool preempt setq 1 express sw0p5
 tsntool preempt enable verify 100 sw0p5
+
+tsntool preempt show sw0p5
+
+
 ## Traffic flow
 
 ### Zelin (AV)
 
-    iperf -c 192.168.10.10 -u -l 60 -b 50M -e -i 1 > s1_av_preem_client.txt
-    iperf -c 192.168.10.10 -u -l 60 -b 50M -e -i 1 > s1_av_nopreem_client.txt
+    iperf -c 192.168.10.10 -b 100M -e -i 1 > s1_av_preem_client.txt
+    iperf -c 192.168.10.10 -b 100M -e -i 1 > s1_av_nopreem_client.txt
 
 ### Jiachen (BE)
 
-    iperf -c 192.168.10.14 -u -l 60 -b 50M -e -i 1 > s1_be_preem_client.txt
-    iperf -c 192.168.10.14 -u -l 60 -b 50M -e -i 1 > s1_be_nopreem_client.txt
+    iperf -c 192.168.10.14 -b 50M -e -i 1 > s1_be_preem_client.txt
+    iperf -c 192.168.10.14 -b 50M -e -i 1 > s1_be_nopreem_client.txt
 
 ### Chuanyu (AV)
 
