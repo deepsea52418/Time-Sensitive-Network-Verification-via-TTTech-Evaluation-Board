@@ -1,8 +1,6 @@
-## 1. Experiment setting
+## 1. Default configuration
 
-### Jiachen & Zelin
-
-Should fix following file
+Should fix following file for each client
 
     /etc/netplan/50-cloud-init.yaml       
 
@@ -29,29 +27,19 @@ Make sure the name of ethernet port is "eth0", dhcp4 is off:
                         password: "1234567809"
                         hidden: false
 
-Then apply those configurations
+Then apply:
 
-## 2. Experiment conduction
+- default_02.sh
+- default_03.sh
+- default_admin.sh
+- default_jiachen.sh
+- default_zelin.sh
 
-**Please make sure iperf2_2.0.9 is installed for Jiachen, Zelin and Chuanyu clients**
+To set up vlan and egress setting.
 
-### 
+## 2. Specific configuration
 
-
-### Zelin
-
+Other configurations are depended on the requirement of specific scenario, please see README.md in each scenario.
 
 
 
-
-### Jiachen
-
-**Talker (192.168.0.10)** 
-
-iperf3.exe -c 192.168.0.11 -u -t 100 -b 100m 
-
-**Host (192.168.0.4)** iperf3 -c 192.168.0.3 -u -t 100 -b 10m
-
-**Listener (192.168.0.11)** 开启 iperf3.exe -s -J > udp_simple_be_log.json
-
-**Host (192.168.0.3)** 开启 iperf3 -s -J > udp_simple_ct_log.json
