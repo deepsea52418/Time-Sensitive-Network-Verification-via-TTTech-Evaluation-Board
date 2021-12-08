@@ -114,5 +114,21 @@ Run following script
 
 ### 3.2 Dynamic scheduling
 
+ **Zelin (AV flow)**
 
+    ## Set default gate on host2 first
+    iperf -c 192.168.10.10 -b 20M -e -i 1 > av_qbv_default.txt 
+    
+    ## Set scheduled gate on host2 --> av_gate_2.cfg
+    iperf -c 192.168.10.10 -b 20M -e -i 1 > av_qbv_sche.txt
+
+**Jiachen (BE flow)**
+
+```
+## Set default gate on host2 first
+iperf -c 192.168.10.14 -b 80M -e -i 1 > bv_qbv_default.txt 
+
+## Set scheduled gate on host2 --> av_gate_2.cfg
+iperf -c 192.168.10.14 -b 80M -e -i 1 > bv_qbv_sche.txt
+```
 
