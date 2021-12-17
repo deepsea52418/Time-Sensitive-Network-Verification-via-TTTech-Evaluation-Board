@@ -57,9 +57,9 @@ Without `-b`  parameter, the default bandwidth is maximum (100Mbits for current 
 
 ```
 ## Set default gate on host2 first
-iperf -c 192.168.10.10 -e -i 1 > av_qbv_default.txt 
+iperf -c 192.168.10.10 -e -i 1 > av_qbv_default.txt | at xx:xx
 
 ## Set scheduled gate on host2 --> av_gate_2.cfg
-iperf -c 192.168.10.10 -e -i 1 > av_qbv_sche.txt
+iperf -c 192.168.10.10 -e -i 1 > av_qbv_sche.txt | at xx:xx
 ```
 

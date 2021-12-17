@@ -48,21 +48,23 @@ Please install iperf 2.09 under `tools` folder, only this version supports `-e` 
 
 ### 3.1 Traffic flow collision (Periodicly) 
 
+Update: Add `at` command to make sure they run at the same time.
+s
 **Zelin (AV flow)**
 
     ## Set Non-preemptive on host2 and host3 first
-    iperf -c 192.168.10.10 -b 50M -e -i 1 > av_nonpreempt.txt 
+    iperf -c 192.168.10.10 -e -M 1400 -t 100 > av_nonpreempt.txt
     
     ## Set Preemptive on host2 and host3 first
-    iperf -c 192.168.10.10 -b 50M -e -i 1 > av_preempt.txt
+    iperf -c 192.168.10.10 -e -M 1400 -t 100> av_preempt.txt
 
 **Jiachen (BE flow)**
 
     ## Set Non-preemptive on host2 and host3 first
-    iperf -c 192.168.10.14 -b 50M -e -i 1 > be_nonpreempt.txt
+    iperf -c 192.168.10.14 -e -M 1500 -t 100> be_nonpreempt.txt
     
     ## Set Preemptive on host2 and host3 first
-    iperf -c 192.168.10.14 -b 50M -e -i 1 > be_preempt.txt
+    iperf -c 192.168.10.14 -e -M 1500 -t 100> be_preempt.txt
 
 *Because iperf supports TCP bandwidth testing, the testing results from server and clients are same. If using UDP, the result on both ends should be logged.*
 
@@ -73,17 +75,17 @@ Please install iperf 2.09 under `tools` folder, only this version supports `-e` 
 **Zelin (AV flow)**
 
     ## Set Non-preemptive on host2 and host3 first
-    ping -f 192.168.10.10 > av_nonpreempt_ping.txt
+    ping -f 192.168.10.10 > av_nonpreempt_ping.txt | at xx:xx
     
     ## Set Preemptive on host2 and host3 first
-    ping -f 192.168.10.10 > av_preempt_ping.txt
+    ping -f 192.168.10.10 > av_preempt_ping.txt | at xx:xx
 
 **Jiachen (BE flow)**
 
     ## Set Non-preemptive on host2 and host3 first
-    iperf -c 192.168.10.14 -b 100M -e -i 1
+    iperf -c 192.168.10.14 -e -M 1500 | at xx:xx
     
     ## Set Preemptive on host2 and host3 first
-    iperf -c 192.168.10.14 -b 100M -e -i 1
+    iperf -c 192.168.10.14 -e -M 1500 | at xx:xx
 
 *Here replace AV client by CT client will be more reasonable.*

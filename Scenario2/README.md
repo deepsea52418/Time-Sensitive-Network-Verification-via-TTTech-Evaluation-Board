@@ -87,14 +87,14 @@ Please install iperf 2.09 under `tools` folder, only this version supports `-e` 
  **Zelin (AV flow)**
 
     ## Set default gate on host2 first
-    iperf -c 192.168.10.10 -b 20M -e -i 1 > av_qbv_default.txt 
+    iperf -c 192.168.10.10 -b 20M -e -i 1 > av_qbv_default.txt | at xx:xx
     
     ## Set scheduled gate on host2 --> av_gate_2.cfg
-    iperf -c 192.168.10.10 -b 20M -e -i 1 > av_qbv_sche.txt
+    iperf -c 192.168.10.10 -b 20M -e -i 1 > av_qbv_sche.txt | at xx:xx
 
 **Jiachen (BE flow)**
 
-Run following script
+Run following script  (also use | at xx:xx)
 
     #! /bin/sh
     
@@ -117,18 +117,18 @@ Run following script
  **Zelin (AV flow)**
 
     ## Set default gate on host2 first
-    iperf -c 192.168.10.10 -b 20M -e -i 1 > av_qbv_default.txt 
+    iperf -c 192.168.10.10 -b 20M -e -i 1 > av_qbv_default.txt | at xx:xx
     
     ## Set scheduled gate on host2 --> av_gate_2.cfg
-    iperf -c 192.168.10.10 -b 20M -e -i 1 > av_qbv_sche.txt
+    iperf -c 192.168.10.10 -b 20M -e -i 1 > av_qbv_sche.txt | at xx:xx
 
 **Jiachen (BE flow)**
 
 ```
 ## Set default gate on host2 first
-iperf -c 192.168.10.14 -b 80M -e -i 1 > bv_qbv_default.txt 
+iperf -c 192.168.10.14 -b 80M -e -i 1 > bv_qbv_default.txt | at xx:xx
 
 ## Set scheduled gate on host2 --> av_gate_2.cfg
-iperf -c 192.168.10.14 -b 80M -e -i 1 > bv_qbv_sche.txt
+iperf -c 192.168.10.14 -b 80M -e -i 1 > bv_qbv_sche.txt  | at xx:xx
 ```
 

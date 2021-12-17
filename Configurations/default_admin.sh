@@ -18,3 +18,5 @@ ip link set vlan10 type vlan egress 6:7
 ip link set vlan10 type vlan egress 7:7
 
 ip link set vlan10 up
+
+ip addr add 192.168.0.21/24 dev eth0
