@@ -75,17 +75,17 @@ s
 **Zelin (AV flow)**
 
     ## Set Non-preemptive on host2 and host3 first
-    ping -f 192.168.10.10 > av_nonpreempt_ping.txt | at xx:xx
+    ping -f 192.168.10.10 > av_nonpreempt_ping.txt
     
     ## Set Preemptive on host2 and host3 first
-    ping -f 192.168.10.10 > av_preempt_ping.txt | at xx:xx
+    ping -f 192.168.10.10 > av_preempt_ping.txt
 
 **Jiachen (BE flow)**
 
     ## Set Non-preemptive on host2 and host3 first
-    iperf -c 192.168.10.14 -e -M 1500 | at xx:xx
+    iperf -c 192.168.10.14 -e -M 1500 
     
     ## Set Preemptive on host2 and host3 first
-    iperf -c 192.168.10.14 -e -M 1500 | at xx:xx
+    iperf -c 192.168.10.14 -e -M 1500
 
 *Here replace AV client by CT client will be more reasonable.*
