@@ -45,33 +45,10 @@ tsntool st configure +0.0 1/1000
 ```
 
 
-
 For dynamic experiment, make a shell script `auto_tas.sh` and run on host2 **during the traffic flow**
 
 ```
-#! /bin/sh
-
-tsntool st wrcl sw0p5 default.cfg
-tsntool st configure +0.0 1/1000
-sleep 10
-
-tsntool st wrcl sw0p5 av_gate_0.cfg
-tsntool st configure +0.0 1/1000
-sleep 10
-
-tsntool st wrcl sw0p5 av_gate_1.cfg
-tsntool st configure +0.0 1/1000
-sleep 10
-
-.....
-
-tsntool st wrcl sw0p5 av_gate_10.cfg
-tsntool st configure +0.0 1/1000
-sleep 10
-
-## Dont forget to make every gate open after experiment
-tsntool st wrcl sw0p5 av_gate_10.cfg
-tsntool st configure +0.0 1/1000
+sudo sh auto_tas.sh
 ```
 
 
@@ -84,28 +61,27 @@ Please install iperf 2.09 under `tools` folder, only this version supports `-e` 
 
 ### 3.1 Static scheduling
 
- **Zelin (AV flow)**
+ **AV flow**
+
+    ## Total 4 sets of experiments
 
     ## Set default gate on host2 first
-    iperf -c 192.168.10.10 -b 20M -e -i 1 > av_qbv_default.txt | at xx:xx
+    at xx:xx -f av_script/default_static_constantly.sh
+    at xx:xx -f av_script/default_static_periodicly.sh
     
     ## Set scheduled gate on host2 --> av_gate_2.cfg
-    iperf -c 192.168.10.10 -b 20M -e -i 1 > av_qbv_sche.txt | at xx:xx
+    at xx:xx -f av_script/gated_static_constantly.sh
+    at xx:xx -f av_script/gated_static_periodicly.sh
 
-**Jiachen (BE flow)**
+**BE flow**
 
-Run following script  (also use | at xx:xx)
+    ## Set default gate on host2 first
+    at xx:xx -f be_script/default_static_constantly.sh
+    at xx:xx -f be_script/default_static_periodicly.sh
 
-    #! /bin/sh
-    
-    timeout 10s iperf -c 192.168.10.14 -b 10M -e -i 1
-    
-    timeout 10s iperf -c 192.168.10.14 -b 20M -e -i 1
-    
-    ....
-    
-    timeout 10s iperf -c 192.168.10.14 -b 100M -e -i 1
-    
+    ## Set scheduled gate on host2 --> av_gate_2.cfg
+    at xx:xx -f be_script/gated_static_constantly.sh
+    at xx:xx -f be_script/gated_static_periodicly.sh
     
 
 *Because iperf supports TCP bandwidth testing, the testing results from server and clients are same. If using UDP, the result on both ends should be logged.*
@@ -114,21 +90,14 @@ Run following script  (also use | at xx:xx)
 
 ### 3.2 Dynamic scheduling
 
+For dynamic experiment, make a shell script `auto_tas.sh` and run on host2 **during the traffic flow**
+
  **Zelin (AV flow)**
 
-    ## Set default gate on host2 first
-    iperf -c 192.168.10.10 -b 20M -e -i 1 > av_qbv_default.txt | at xx:xx
+    at xx:xx -f av_script/dynamic_constantly.sh
     
-    ## Set scheduled gate on host2 --> av_gate_2.cfg
-    iperf -c 192.168.10.10 -b 20M -e -i 1 > av_qbv_sche.txt | at xx:xx
 
 **Jiachen (BE flow)**
 
-```
-## Set default gate on host2 first
-iperf -c 192.168.10.14 -b 80M -e -i 1 > bv_qbv_default.txt | at xx:xx
-
-## Set scheduled gate on host2 --> av_gate_2.cfg
-iperf -c 192.168.10.14 -b 80M -e -i 1 > bv_qbv_sche.txt  | at xx:xx
-```
+    at xx:xx -f be_script/dynamic_constantly.sh
 
