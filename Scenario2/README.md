@@ -36,7 +36,7 @@ sgs (10 - k)0000 0xdf
 
 ## 2. Boards configuration
 
-For static experiment, run follows on host2
+For static experiment, run following on host2
 
 ```
 ## Set default.cfg back after experiment

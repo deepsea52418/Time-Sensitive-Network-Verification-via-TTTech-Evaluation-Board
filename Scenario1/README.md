@@ -75,7 +75,7 @@ s
 **Zelin (AV flow)**
 
     ## Set Non-preemptive on host2 and host3 first
-    ping -f 192.168.10.10 > av_nonpreempt_ping.txt
+    ping -n 100 - 192.168.10.10 > av_nonpreempt_ping.txt
     
     ## Set Preemptive on host2 and host3 first
     ping -f 192.168.10.10 > av_preempt_ping.txt
